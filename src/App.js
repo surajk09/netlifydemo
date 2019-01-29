@@ -13,11 +13,11 @@ class App extends Component {
           </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://www.htmlrun.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Learn HTML
           </a>
         </header>
       </div>
