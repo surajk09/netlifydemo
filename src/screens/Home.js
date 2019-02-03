@@ -1,12 +1,12 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
-import {Image} from "semantic-ui-react"
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        <Image src={require("../images/conferenceRoom.jpg")} size="massive"></Image>
+        <h2>Home</h2>
+        <Link to="/details">Details</Link>
       </div>
     )
   }
