@@ -18,24 +18,25 @@ class App extends React.Component {
   return (
     <div>
     <Menu stackable>
-    <Menu.Item
-        >
+    <Menu.Item>
           <h2>Mark</h2>
         </Menu.Item>
-        <Link to="/home"><Menu.Item
+        <Menu.Item
           name='ConferenceRoom'
           active={activeItem === 'ConferenceRoom'}
-          onClick={this.handleItemClick}
-        >
+          onClick={this.handleItemClick}>
+        <Link to="/home">
           Home
-        </Menu.Item></Link>
-    <Link to="/users"><Menu.Item
+        </Link></Menu.Item>
+
+<Menu.Item
           name='ConferenceRoom'
           active={activeItem === 'ConferenceRoom'}
           onClick={this.handleItemClick}
         >
+    <Link to="/users">
           Conference Room
-        </Menu.Item></Link>
+        </Link>  </Menu.Item>
 
         <Menu.Item name='reviews' active={activeItem === 'reviews'} onClick={this.handleItemClick}>
           Teams
